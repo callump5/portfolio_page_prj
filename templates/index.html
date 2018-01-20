@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/lib/css/reset.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cairo|Exo|Maven+Pro|PT+Sans+Caption|Rajdhani|Rokkitt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Raleway|Saira+Condensed" rel="stylesheet">
+
+    <script src="/static/lib/js/jquery.min.js"></script>
+    <script src="/static/lib/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.nav-btn')
+                .click(function () {
+                    loc = $(this).find('a').attr('href');
+                    poss = $(loc).offset().top;
+
+                    $('html, body').animate({ scrollTop: poss + "px"});
+                });
+
+
+
+        });
+    </script>
+</head>
+<body>
+
+
+
+<div id="page_1" class="parallax">
+
+    <img id="logo" src="/static/logo.png">
+
+    <div id="landing">
+        <div class="nav-btn">
+            <span class="glyphicon glyphicon-education"></span>
+            <a href="#parallax_2">Education</a>
+        </div>
+        <div class="nav-btn">
+            <span class="glyphicon glyphicon-briefcase"></span>
+            <a href="#parallax_3">Expertise</a>
+        </div>
+        <div class="nav-btn">
+            <span class="glyphicon glyphicon-book"></span>
+            <a href="#parallax_4">Portfolio</a>
+        </div>
+        <div class="nav-btn">
+            <span class="glyphicon glyphicon-envelope"></span>
+            <a href="#parallax_5">Contact</a>
+        </div>
+    </div>
+</div>
+
+<div class="break">
+    <img src="/static/logo.png">
+    <h1>
+
+    </h1>
+</div>
+
+<div id="parallax_2">
+
+</div>
+
+<div class="break">
+    <img src="/static/logo.png">
+    <h1>
+
+    </h1>
+</div>
+
+<div id="parallax_3"></div>
+
+</body>
+</html>
