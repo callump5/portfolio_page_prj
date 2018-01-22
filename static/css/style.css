@@ -143,13 +143,10 @@ body {
 ---------------------------------------------------------------------------- */
 #prjs{
     height: 100vh;
-
-    vertical-align: middle;
-
-
 }
 
 .col-sm-3{
+    width: 300px;
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+87,0+100 */
     background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 87%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 87%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -159,6 +156,7 @@ body {
     opacity: 0.9;
     border-radius: 5px;
     margin: 0 30px;
+    vertical-align: middle;
 }
 
 .thumb-title {
