@@ -148,10 +148,12 @@ body {
 }
 
 .center {
+    height: inherit;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .col-sm-3{
