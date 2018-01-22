@@ -143,10 +143,10 @@ body {
 ---------------------------------------------------------------------------- */
 #prjs{
     height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
+    vertical-align: middle;
+
+
 }
 
 .col-sm-3{
