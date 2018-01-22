@@ -112,6 +112,7 @@ body {
     width: 100vw;
     margin: 0 60px;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 #education {
@@ -145,10 +146,6 @@ body {
 #prjs{
     height: 100vh;
     margin: 0 auto;
-}
-
-.center {
-    height: inherit;
     display: flex;
     flex-direction: row;
     justify-content: center;
