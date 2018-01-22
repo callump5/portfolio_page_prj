@@ -143,6 +143,7 @@ body {
 ---------------------------------------------------------------------------- */
 #prjs{
     height: 100vh;
+    margin: 0 auto;
 }
 
 .col-sm-3{
@@ -157,8 +158,11 @@ body {
     border-radius: 5px;
     margin: 0 30px;
     vertical-align: middle;
+    padding-top: 10px;
+    position: fixed;
+    top: 50%;
 
-    
+
 }
 
 .thumb-title {
