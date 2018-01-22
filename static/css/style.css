@@ -147,8 +147,9 @@ body {
 }
 
 .center {
-    vertical-align: middle;
-    margin: 0 auto;
+    position: absolute;
+    top: 50vh;
+    text-align: center;
 }
 
 .col-sm-3{
