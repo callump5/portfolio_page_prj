@@ -2,80 +2,189 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CP Development</title>
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
     <link rel="stylesheet" href="/static/lib/css/reset.css">
     <link rel="stylesheet" href="/static/css/style.css">
 
+
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cairo|Exo|Maven+Pro|PT+Sans+Caption|Rajdhani|Rokkitt" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Raleway|Saira+Condensed" rel="stylesheet">
-
     <script src="/static/lib/js/jquery.min.js"></script>
     <script src="/static/lib/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.nav-btn')
-                .click(function () {
-                    loc = $(this).find('a').attr('href');
-                    poss = $(loc).offset().top;
-
-                    $('html, body').animate({ scrollTop: poss + "px"});
-                });
-
-
-
-        });
-    </script>
+   <script src="/static/func.js"type="text/javascript"></script>
 </head>
 <body>
 
 
+<!-- Page 1 / Navigation -->
+    <div id="page_1" class="parallax">
 
-<div id="page_1" class="parallax">
+        <img id="logo" src="/static/logo.png">
 
-    <img id="logo" src="/static/logo.png">
-
-    <div id="landing">
-        <div class="nav-btn">
-            <span class="glyphicon glyphicon-education"></span>
-            <a href="#parallax_2">Education</a>
-        </div>
-        <div class="nav-btn">
-            <span class="glyphicon glyphicon-briefcase"></span>
-            <a href="#parallax_3">Expertise</a>
-        </div>
-        <div class="nav-btn">
-            <span class="glyphicon glyphicon-book"></span>
-            <a href="#parallax_4">Portfolio</a>
-        </div>
-        <div class="nav-btn">
-            <span class="glyphicon glyphicon-envelope"></span>
-            <a href="#parallax_5">Contact</a>
+        <div id="landing">
+            <div class="nav-btn">
+                <span class="glyphicon glyphicon-user"></span>
+                <p href="#page_2">About</p>
+            </div>
+            <div class="nav-btn">
+                <span class="glyphicon glyphicon-briefcase"></span>
+                <p href="#page_3">Expertise</p>
+            </div>
+            <div class="nav-btn">
+                <span class="glyphicon glyphicon-book"></span>
+                <p href="#page_4">Portfolio</p>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="break">
-    <img src="/static/logo.png">
-    <h1>
+    <div class="break">
+        <img src="/static/logo.png">
+        <div class="details">
+            <h1>{{ me.name }} </h1>
+            <p>Mobile: {{ me.mobile }}</p>
+            <p>Email: <a href="mailto:{{ me.email }}">{{ me.email }}</a></p>
+            <p>Github: <a href="{{ me.github }}">{{ me.github }}</a></p>
+        </div>
+    </div>
+<!-- /Page 1 -->
 
-    </h1>
-</div>
 
-<div id="parallax_2">
+<!-- Page 2 -->
+    <div id="page_2" class="parallax" style="background-image: url('/static/imgs/parallax/index5.jpg')">
 
-</div>
 
-<div class="break">
-    <img src="/static/logo.png">
-    <h1>
+        <div id="about" class="container">
+            <h1>Hey, my name is Callum.</h1>
+            <p>I'm a software developer based in Essex, England!</p>
 
-    </h1>
-</div>
+            <p>I design and build Full Stack web applications!</p>
 
-<div id="parallax_3"></div>
+            <p>Have an idea you want to make a reality?</p>
+
+            <a id="email-btn" class="btn" href="mailto:{{ me.email }}">Email Me</a>
+        </div>
+
+
+    </div>
+
+    <div class="break">
+        <img src="/static/logo.png">
+        <div class="details">
+            <h1>{{ me.name }} </h1>
+            <p>Mobile: {{ me.mobile }}</p>
+            <p>Email: <a href="mailto:{{ me.email }}">{{ me.email }}</a></p>
+            <p>Github: <a href="{{ me.github }}">{{ me.github }}</a></p>
+        </div>
+    </div>
+<!-- /Page 2 -->
+
+
+<!-- Page 3 -->
+
+    <div id="page_3" class="parallax" style="background-image: url('/static/imgs/parallax/index3.jpg')">
+
+        <div class="container">
+            <div id="education">
+                <h1>Foundation Degree in Software Development</h1>
+                <p>Level 5 Diploma</p>
+            </div>
+
+            <div id="skills">
+                <h2>My Skills</h2>
+                <ul>
+                    <li>Web Design</li>
+                    <li>Web Development</li>
+                    <li>Data Analytics</li>
+                    <li>Version Control</li>
+                </ul>
+                <br>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                    <li>Django</li>
+                    <li>Bootstrap</li>
+                    <li>E-commerce</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="break">
+        <img src="/static/logo.png">
+        <div class="details">
+            <h1>{{ me.name }} </h1>
+            <p>Mobile: {{ me.mobile }}</p>
+            <p>Email: <a href="mailto:{{ me.email }}">{{ me.email }}</a></p>
+            <p>Github: <a href="{{ me.github }}">{{ me.github }}</a></p>
+        </div>
+    </div>
+
+<!-- /Page 3 -->
+<!-- Page 4 -->
+
+
+    <div id="page_4" class="parallax" style="background-image: url('/static/imgs/parallax/index4.jpg')">
+        <div id='prjs' class="container">
+
+            <!-- Project 1 -->
+            <div class="col-sm-3 prj">
+                <div class="prj-thumb">
+                    <div class="thumb-title">
+                        <h1>Share Respite</h1>
+                        <span class="glyphicon glyphicon-info-sign"></span>
+                    </div>
+                    <p>For this project i designed and developed a website for a charity
+                        whoms website was outdated.</p>
+                    <p>As well as revamping the design i developed a back end by adding in
+                        a forum and Stripe integration for donations</p>
+                </div>
+
+                <div class="prj-details">
+
+                    <img class="img-thumb" src="/static/imgs/prjs/share.png">
+                    <div class="icons">
+                        <a href="https://github.com/callump5/share_respite_prj"><img class="git" src="/static/imgs/git.png"></a>
+                        <a href="https://share-respite.herokuapp.com/"><img class="web" src="/static/imgs/Insert-hyperlink-icon.png"></a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-sm-3 prj">
+                <div class="prj-thumb">
+                    <div class="thumb-title">
+                        <h1>Nasa Data</h1>
+                        <span class="glyphicon glyphicon-info-sign"></span>
+                    </div>
+                    <p>Taking data sets from the nasa website, I used crossfilter.js, dc.js and d3.js to filter then display
+                        the data to show the connection between different methods of discovery</p>
+                </div>
+
+                <div class="prj-details">
+
+                    <img class="img-thumb" src="/static/imgs/prjs/nasa.png">
+                    <div class="icons">
+                        <a href="https://github.com/callump5/share_respite_prj"><img class="git" src="/static/imgs/git.png"></a>
+                        <a href="https://share-respite.herokuapp.com/"><img class="web" src="/static/imgs/Insert-hyperlink-icon.png"></a>
+
+                    </div>
+                </div>
+            </div>
+
+           
+
+
+        </div>
+    </div>
+<!-- /Page 4 -->
 
 </body>
 </html>

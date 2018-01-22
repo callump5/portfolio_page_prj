@@ -5,7 +5,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return render_template('index.html')
+    me = {
+        'name': 'Callum Pullinger',
+        'email': 'callum.pullinger@gmail.com',
+        'mobile': '07412090817',
+        'github': 'https://github.com/callump5'
+    }
+    return render_template('index.html', me = me)
 
 
 if __name__ == '__main__':
