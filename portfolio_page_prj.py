@@ -7,7 +7,7 @@ app = Flask(__name__)
 def hello_world():
     me = {
         'name': 'Callum Pullinger',
-        'email': 'callum.pullinger@gmail.com',
+        'email': 'cpullinger@gmail.com',
         'mobile': '07412090817',
         'github': 'https://github.com/callump5'
     }
